@@ -19,7 +19,7 @@
     }
 
     html {
-      scroll-behavior: smooth; /* স্মুথ স্ক্রোলিংয়ের জন্য */
+      scroll-behavior: smooth;
     }
 
     body {
@@ -121,31 +121,29 @@
       color: #7c3aed;
     }
 
-    /* Hero Section */
+    /* Hero Section (Without Image) */
     .hero {
-      padding: 60px 0;
-      position: relative;
+      padding: 100px 0 80px 0;
+      text-align: center;
     }
 
-    .hero-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 40px;
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .hero-content .subtitle {
       color: #7c3aed;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 500;
       margin-bottom: 10px;
     }
 
     .hero-content h1 {
-      font-size: 56px;
+      font-size: 64px;
       font-weight: 800;
       line-height: 1.1;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .hero-content h1 span {
@@ -153,7 +151,7 @@
     }
 
     .hero-content h2 {
-      font-size: 24px;
+      font-size: 28px;
       color: #e2e8f0;
       font-weight: 600;
       margin-bottom: 20px;
@@ -161,27 +159,29 @@
 
     .hero-content p {
       color: #94a3b8;
-      font-size: 16px;
-      margin-bottom: 30px;
-      max-width: 480px;
+      font-size: 18px;
+      margin: 0 auto 35px auto;
+      max-width: 650px;
     }
 
     .hero-buttons {
       display: flex;
       gap: 15px;
-      margin-bottom: 35px;
+      justify-content: center;
+      margin-bottom: 40px;
     }
 
     /* Social Links */
     .social-section {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 15px;
     }
 
     .social-section span {
       color: #94a3b8;
-      font-size: 14px;
+      font-size: 15px;
     }
 
     .social-icons {
@@ -190,15 +190,15 @@
     }
 
     .social-icons a {
-      width: 36px;
-      height: 36px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       background: #1e1b4b;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
-      font-size: 14px;
+      font-size: 16px;
       border: 1px solid rgba(124, 58, 237, 0.2);
     }
 
@@ -207,36 +207,122 @@
       transform: translateY(-3px);
     }
 
-    /* Hero Image */
-    .hero-image-container {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    /* Section Titles */
+    .section-title {
+      margin-bottom: 30px;
     }
 
-    .glow-bg {
+    .section-title span {
+      color: #7c3aed;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title h2::after {
+      content: '';
       position: absolute;
-      width: 380px;
-      height: 380px;
-      border-radius: 50%;
-      border: 15px solid #7c3aed;
-      box-shadow: 0 0 80px rgba(124, 58, 237, 0.6);
-      z-index: 1;
+      bottom: -8px;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background: #7c3aed;
+      border-radius: 2px;
     }
 
-    .hero-img {
-      position: relative;
-      z-index: 2;
-      max-width: 100%;
-      height: auto;
-      border-radius: 20px;
-      object-fit: cover;
+    /* About Me Section */
+    .about-section {
+      padding: 80px 0;
+      background: #0b0f19;
+      border-top: 1px solid #1e293b;
+      border-bottom: 1px solid #1e293b;
+      margin-bottom: 80px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .about-text p {
+      color: #94a3b8;
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .about-info-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .info-item h4 {
+      color: #7c3aed;
+      font-size: 14px;
+    }
+
+    .info-item p {
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    /* Skills Box */
+    .skills-box {
+      background: #0f172a;
+      padding: 30px;
+      border-radius: 16px;
+      border: 1px solid #1e293b;
+    }
+
+    .skills-box h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .skill-item {
+      margin-bottom: 15px;
+    }
+
+    .skill-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      background: #7c3aed;
+      border-radius: 10px;
     }
 
     /* Stats Bar */
     .stats-bar {
-      margin: 40px 0 80px 0;
+      margin: 0 0 80px 0;
       background: #0f172a;
       border: 1px solid #1e293b;
       border-radius: 16px;
@@ -276,36 +362,6 @@
     }
 
     /* Services Section */
-    .section-title {
-      margin-bottom: 30px;
-    }
-
-    .section-title span {
-      color: #7c3aed;
-      font-size: 14px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .section-title h2 {
-      font-size: 32px;
-      font-weight: 700;
-      position: relative;
-      display: inline-block;
-    }
-
-    .section-title h2::after {
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-      width: 40px;
-      height: 3px;
-      background: #7c3aed;
-      border-radius: 2px;
-    }
-
     .services-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -449,10 +505,8 @@
 
     /* Responsive Design */
     @media (max-width: 992px) {
-      .hero-wrapper { grid-template-columns: 1fr; text-align: center; }
-      .hero-content p { margin: 0 auto 30px auto; }
-      .hero-buttons { justify-content: center; }
-      .social-section { justify-content: center; }
+      .hero-content h1 { font-size: 42px; }
+      .about-grid { grid-template-columns: 1fr; }
       .stats-bar { grid-template-columns: repeat(2, 1fr); }
       .services-grid { grid-template-columns: repeat(2, 1fr); }
       .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
@@ -463,6 +517,7 @@
 
     @media (max-width: 576px) {
       .nav-links { display: none; }
+      .about-info-list { grid-template-columns: 1fr; }
       .stats-bar { grid-template-columns: 1fr; }
       .services-grid { grid-template-columns: 1fr; }
       .portfolio-grid { grid-template-columns: 1fr; }
@@ -477,7 +532,7 @@
       <a href="#home" class="logo">Asraf <span>1st</span></a>
       <ul class="nav-links">
         <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About Me</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
@@ -487,14 +542,14 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Centered & Clean text layout) -->
   <section class="hero" id="home">
-    <div class="container hero-wrapper">
+    <div class="container">
       <div class="hero-content">
         <p class="subtitle">Hello, I'm</p>
         <h1>Asraf <span>1st</span></h1>
         <h2>Web Designer & Developer</h2>
-        <p>I create stunning, responsive websites that help businesses grow and stand out online.</p>
+        <p>I create stunning, responsive websites that help businesses grow and stand out online with modern web standards and smooth design experiences.</p>
         
         <div class="hero-buttons">
           <a href="#portfolio" class="btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
@@ -511,16 +566,83 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="hero-image-container">
-        <div class="glow-bg"></div>
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80" alt="Asraf Portrait" class="hero-img">
+  <!-- Dedicated About Me Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-title">
+        <span>Get To Know Me</span>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hi, I'm Asraf 1st. I am a passionate Web Designer and Developer dedicated to creating interactive, pixel-perfect, and modern websites. With a strong focus on clean code and user experience, I transform concepts into beautiful digital solutions.</p>
+          <p>Whether you need a full website build, UI/UX design, or website optimization, I ensure every project is crafted to perform flawlessly across all devices.</p>
+          
+          <div class="about-info-list">
+            <div class="info-item">
+              <h4>Name:</h4>
+              <p>Asraf 1st</p>
+            </div>
+            <div class="info-item">
+              <h4>Experience:</h4>
+              <p>2+ Years</p>
+            </div>
+            <div class="info-item">
+              <h4>Freelance:</h4>
+              <p>Available</p>
+            </div>
+            <div class="info-item">
+              <h4>Location:</h4>
+              <p>Worldwide (Remote)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-box">
+          <h3>My Technical Skills</h3>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>HTML5 & CSS3</span>
+              <span>95%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Responsive Web Design</span>
+              <span>90%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>UI/UX Design</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>JavaScript</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats Bar / About Section -->
-  <section class="container" id="about">
+  <!-- Stats Bar -->
+  <section class="container">
     <div class="stats-bar">
       <div class="stat-item">
         <div class="stat-icon"><i class="fa-regular fa-face-smile"></i></div>
