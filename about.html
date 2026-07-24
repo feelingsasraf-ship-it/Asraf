@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Asraf 1st</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background-color: #080810; color: #ffffff; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; transition: 0.3s ease; }
+    ul { list-style: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header { padding: 25px 0; background: rgba(8, 8, 16, 0.9); }
+    .navbar { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 24px; font-weight: 700; color: #fff; }
+    .logo span { color: #7c3aed; }
+    .nav-links { display: flex; gap: 30px; }
+    .nav-links a { color: #94a3b8; font-size: 15px; font-weight: 500; }
+    .nav-links a:hover, .nav-links a.active { color: #7c3aed; }
+    .btn-primary { background: #7c3aed; color: #fff; padding: 12px 28px; border-radius: 8px; font-weight: 600; border: 1px solid #7c3aed; }
+    
+    /* About Details Section */
+    .about-page-wrapper { padding: 80px 0; display: grid; grid-template-columns: 400px 1fr; gap: 60px; align-items: center; }
+    
+    /* Image Styling (To remove black background) */
+    .about-img-box {
+      width: 100%;
+      height: 500px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 2px solid #7c3aed;
+      box-shadow: 0 0 30px rgba(124, 58, 237, 0.3);
+    }
+    .about-img-box img {
+      width: 100%;
+      height: 100%;
+      /* object-fit: cover; removes the black bars from your screenshot */
+      object-fit: cover; 
+      object-position: center;
+    }
+
+    .about-content h2 { font-size: 42px; font-weight: 700; margin-bottom: 20px; }
+    .about-content h2 span { color: #7c3aed; }
+    .about-content p { color: #94a3b8; font-size: 16px; margin-bottom: 20px; line-height: 1.8; }
+    
+    .personal-info { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; background: #0f172a; padding: 30px; border-radius: 12px; border: 1px solid #1e293b; }
+    .info-item span { color: #7c3aed; font-size: 14px; font-weight: 600; display: block; margin-bottom: 5px; }
+    .info-item h4 { color: #fff; font-size: 16px; font-weight: 500; }
+
+    @media (max-width: 992px) { .about-page-wrapper { grid-template-columns: 1fr; text-align: center; } .about-img-box { margin: 0 auto; max-width: 400px; } .personal-info { text-align: left; } }
+    @media (max-width: 576px) { .nav-links { display: none; } .personal-info { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">Asraf <span>1st</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+      </ul>
+      <a href="mailto:your-email@gmail.com" class="btn-primary">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- About Me Page Content -->
+  <section class="container about-page-wrapper">
+    <!-- Image Box -->
+    <div class="about-img-box">
+      <img src="1000007528.png" alt="Asraf 1st">
+    </div>
+
+    <!-- Text Box -->
+    <div class="about-content">
+      <h2>About <span>Me</span></h2>
+      <p>হ্যালো, আমি আশরাফ। আমি একজন প্রফেশনাল ওয়েব ডিজাইনার এবং ডেভেলপার। আমি নতুন প্রযুক্তি নিয়ে কাজ করতে এবং আকর্ষণীয় ও আধুনিক ওয়েবসাইট তৈরি করতে ভালোবাসি। ক্লায়েন্টের প্রয়োজন অনুযায়ী সঠিক ও নিখুঁত কাজ ডেলিভারি দেওয়াই আমার প্রধান লক্ষ্য।</p>
+      <p>আমার কাজের অভিজ্ঞতা ও দক্ষতা দিয়ে আমি যেকোনো সাধারণ আইডিয়াকে একটি সুন্দর ওয়েবসাইটে রূপান্তর করতে পারি।</p>
+
+      <div class="personal-info">
+        <div class="info-item">
+          <span>Name</span>
+          <h4>Asraf 1st</h4>
+        </div>
+        <div class="info-item">
+          <span>Profession</span>
+          <h4>Web Developer</h4>
+        </div>
+        <div class="info-item">
+          <span>Experience</span>
+          <h4>2+ Years</h4>
+        </div>
+        <div class="info-item">
+          <span>Language</span>
+          <h4>Bengali, English</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
